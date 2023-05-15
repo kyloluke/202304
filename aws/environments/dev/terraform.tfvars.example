@@ -1,0 +1,14 @@
+# APインスタンス数
+ap_instance_count = 1
+
+# DBインスタンス数
+db_instance_count = 1
+
+# サーバー証明書
+server_cert_id = "yyyyyyyy-zzzz-wwww-aaaa-bbbbbbbbbbbb"
+
+# SES送信元アイデンティティ
+ses_sender_identity = "sender@example.com"
+
+# SNSトピック購読メールアドレス
+sns_subsc_email = "receiver@example.com"

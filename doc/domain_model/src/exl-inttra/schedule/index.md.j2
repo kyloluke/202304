@@ -1,0 +1,17 @@
+## exl-inttra.scheduleパッケージ
+
+このパッケージには、航海スケジュール情報に関するオブジェクトが含まれる。
+
+{% include 'exl-inttra/schedule/OceanSchedule.md' %}
+{% include 'exl-inttra/schedule/OceanScheduleLeg.md' %}
+{% include 'exl-inttra/schedule/OceanScheduleConfig.md' %}
+
+{% include 'exl-inttra/schedule/history/OceanScheduleImportHistory.md' %}
+
+## メモ
+
+TODO 整理する
+
+LP2では、INTTRAのデータが間違っている本船スケジュール明細については、ユーザー操作により無効フラグを立てることで次回のINTTRA連携による再取り込みを防止している。
+しかし本来は、削除ユーザーが人間である本船スケジュール明細については再取り込みしないという判断が可能なため、無効フラグは不要である。
+よってLP3ではINNTTRA連携用の無効フラグは廃止する。

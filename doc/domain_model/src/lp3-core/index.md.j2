@@ -1,0 +1,28 @@
+# lp3-coreモジュール
+
+lp3-coreモジュールは、LP3の基盤となる機能を実現するモジュールである。  
+このモジュールは以下のパッケージから構成される。
+
+* `lp3-core`パッケージ
+  * `util`パッケージ
+  * `i18n`パッケージ
+  * `geography`パッケージ
+  * `privilege`パッケージ
+  * `accounting`パッケージ
+  * `identity`パッケージ
+  * `user`パッケージ
+
+以下ではそれぞれのパッケージと、パッケージに含まれるオブジェクトについて説明する。
+
+## lp3-coreパッケージ
+
+このパッケージには、LP3全体の基礎となるインターフェースが含まれる。
+
+{% include 'lp3-core/DomainModel.md' %}
+
+{% include 'lp3-core/util/index.md.j2' %}
+{% include 'lp3-core/i18n/index.md.j2' %}
+{% include 'lp3-core/geography/index.md.j2' %}
+{% include 'lp3-core/accounting/index.md.j2' %}
+{% include 'lp3-core/privilege/index.md.j2' %}
+{% include 'lp3-core/user/index.md.j2' %}

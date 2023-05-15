@@ -1,0 +1,19 @@
+## lp3-core.privilegeパッケージ
+
+このパッケージには、権限関連のオブジェクトが含まれる。
+
+### コンセプト
+
+LP3では、ユーザーといったシステム利用主体を「アイデンティティ」と呼ぶ。  
+アイデンティティごとに、以下のコンセプトに基いて権限を付与する。
+
+**P = ((A) OR (B)) AND (NOT C)**
+
+(P) アイデンティティが持つ最終的な権限  
+(A) アイデンティティのシステム利用形態による権限    
+(B) アイデンティティの業態による権限  
+(C) アイデンティティのランクによる権限  
+
+{% include 'lp3-core/privilege/BusinessType.md' %}
+{% include 'lp3-core/privilege/SystemUsage.md' %}
+{% include 'lp3-core/privilege/IdentityRank.md' %}

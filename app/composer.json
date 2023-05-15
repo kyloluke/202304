@@ -1,0 +1,177 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "knuckleswtf/scribe": "^4.10",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-laravel": "^1.4",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+
+            "Services\\ExlBfwdFtp\\App\\": "services/exl-bfwd-ftp/app/",
+            "Services\\ExlBfwdFtp\\Database\\Factories\\": "services/exl-bfwd-ftp/database/factories/",
+            "Services\\ExlBfwdFtp\\Exports\\": "services/exl-bfwd-ftp/exports/",
+            "Services\\ExlBfwdFtp\\Refers\\": "services/exl-bfwd-ftp/refers/",
+
+            "Services\\ExlInttra\\App\\": "services/exl-inttra/app/",
+            "Services\\ExlInttra\\Database\\Factories\\": "services/exl-inttra/database/factories/",
+            "Services\\ExlInttra\\Exports\\": "services/exl-inttra/exports/",
+            "Services\\ExlInttra\\Refers\\": "services/exl-inttra/refers/",
+
+            "Services\\ExlSyncBanc\\App\\": "services/exl-sync-banc/app/",
+            "Services\\ExlSyncBanc\\Database\\Factories\\": "services/exl-sync-banc/database/factories/",
+            "Services\\ExlSyncBanc\\Exports\\": "services/exl-sync-banc/exports/",
+            "Services\\ExlSyncBanc\\Refers\\": "services/exl-sync-banc/refers/",
+
+            "Services\\ExlSyncDp\\App\\": "services/exl-sync-dp/app/",
+            "Services\\ExlSyncDp\\Database\\Factories\\": "services/exl-sync-dp/database/factories/",
+            "Services\\ExlSyncDp\\Exports\\": "services/exl-sync-dp/exports/",
+            "Services\\ExlSyncDp\\Refers\\": "services/exl-sync-dp/refers/",
+
+            "Services\\ExlSyncFtp\\App\\": "services/exl-sync-ftp/app/",
+            "Services\\ExlSyncFtp\\Database\\Factories\\": "services/exl-sync-ftp/database/factories/",
+            "Services\\ExlSyncFtp\\Exports\\": "services/exl-sync-ftp/exports/",
+            "Services\\ExlSyncFtp\\Refers\\": "services/exl-sync-ftp/refers/",
+
+            "Services\\ExlSyncMetabase\\App\\": "services/exl-sync-metabase/app/",
+            "Services\\ExlSyncMetabase\\Database\\Factories\\": "services/exl-sync-metabase/database/factories/",
+            "Services\\ExlSyncMetabase\\Exports\\": "services/exl-sync-metabase/exports/",
+            "Services\\ExlSyncMetabase\\Refers\\": "services/exl-sync-metabase/refers/",
+
+            "Services\\ExlSyncWeb\\App\\": "services/exl-sync-web/app/",
+            "Services\\ExlSyncWeb\\Database\\Factories\\": "services/exl-sync-web/database/factories/",
+            "Services\\ExlSyncWeb\\Exports\\": "services/exl-sync-web/exports/",
+            "Services\\ExlSyncWeb\\Refers\\": "services/exl-sync-web/refers/",
+
+            "Services\\Lp3Bi\\App\\": "services/lp3-bi/app/",
+            "Services\\Lp3Bi\\Database\\Factories\\": "services/lp3-bi/database/factories/",
+            "Services\\Lp3Bi\\Exports\\": "services/lp3-bi/exports/",
+            "Services\\Lp3Bi\\Refers\\": "services/lp3-bi/refers/",
+
+            "Services\\Lp3Cargo\\App\\": "services/lp3-cargo/app/",
+            "Services\\Lp3Cargo\\Database\\Factories\\": "services/lp3-cargo/database/factories/",
+            "Services\\Lp3Cargo\\Exports\\": "services/lp3-cargo/exports/",
+            "Services\\Lp3Cargo\\Refers\\": "services/lp3-cargo/refers/",
+
+            "Services\\Lp3Core\\App\\": "services/lp3-core/app/",
+            "Services\\Lp3Core\\Database\\Factories\\": "services/lp3-core/database/factories/",
+            "Services\\Lp3Core\\Exports\\": "services/lp3-core/exports/",
+            "Services\\Lp3Core\\Refers\\": "services/lp3-core/refers/",
+
+            "Services\\Lp3Job\\App\\": "services/lp3-job/app/",
+            "Services\\Lp3Job\\Database\\Factories\\": "services/lp3-job/database/factories/",
+            "Services\\Lp3Job\\Exports\\": "services/lp3-job/exports/",
+            "Services\\Lp3Job\\Refers\\": "services/lp3-job/refers/",
+
+            "Services\\Lp3Sales\\App\\": "services/lp3-sales/app/",
+            "Services\\Lp3Sales\\Database\\Factories\\": "services/lp3-sales/database/factories/",
+            "Services\\Lp3Sales\\Exports\\": "services/lp3-sales/exports/",
+            "Services\\Lp3Sales\\Refers\\": "services/lp3-sales/refers/",
+
+            "Services\\Lp3Ship\\App\\": "services/lp3-ship/app/",
+            "Services\\Lp3Ship\\Database\\Factories\\": "services/lp3-ship/database/factories/",
+            "Services\\Lp3Ship\\Exports\\": "services/lp3-ship/exports/",
+            "Services\\Lp3Ship\\Refers\\": "services/lp3-ship/refers/",
+
+            "Services\\SampleAlice\\App\\": "services/sample-alice/app/",
+            "Services\\SampleAlice\\Database\\Factories\\": "services/sample-alice/database/factories/",
+            "Services\\SampleAlice\\Exports\\": "services/sample-alice/exports/",
+            "Services\\SampleAlice\\Refers\\": "services/sample-alice/refers/",
+
+            "Services\\SampleBob\\App\\": "services/sample-bob/app/",
+            "Services\\SampleBob\\Database\\Factories\\": "services/sample-bob/database/factories/",
+            "Services\\SampleBob\\Exports\\": "services/sample-bob/exports/",
+            "Services\\SampleBob\\Refers\\": "services/sample-bob/refers/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+
+            "Services\\ExlBfwdFtp\\Tests\\": "services/exl-bfwd-ftp/tests/",
+
+            "Services\\ExlInttra\\Tests\\": "services/exl-inttra/tests/",
+
+            "Services\\ExlSyncBanc\\Tests\\": "services/exl-sync-banc/tests/",
+
+            "Services\\ExlSyncDp\\Tests\\": "services/exl-sync-dp/tests/",
+
+            "Services\\ExlSyncFtp\\Tests\\": "services/exl-sync-ftp/tests/",
+
+            "Services\\ExlSyncMetabase\\Tests\\": "services/exl-sync-metabase/tests/",
+
+            "Services\\ExlSyncWeb\\Tests\\": "services/exl-sync-web/tests/",
+
+            "Services\\Lp3Bi\\Tests\\": "services/lp3-bi/tests/",
+
+            "Services\\Lp3Cargo\\Tests\\": "services/lp3-cargo/tests/",
+
+            "Services\\Lp3Core\\Tests\\": "services/lp3-core/tests/",
+
+            "Services\\Lp3Job\\Tests\\": "services/lp3-job/tests/",
+
+            "Services\\Lp3Sales\\Tests\\": "services/lp3-sales/tests/",
+
+            "Services\\Lp3Ship\\Tests\\": "services/lp3-ship/tests/",
+
+            "Services\\Core\\Tests\\": "services/core/tests/",
+
+            "Services\\Ship\\Tests\\": "services/ship/tests/",
+
+            "Services\\SampleAlice\\Tests\\": "services/sample-alice/tests/",
+
+            "Services\\SampleBob\\Tests\\": "services/sample-bob/tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

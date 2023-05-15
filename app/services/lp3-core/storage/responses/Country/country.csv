@@ -1,0 +1,4 @@
+id,name,regionId,regionName,requiredInspections
+100,日本,1,アジア,"JEVIC検査,QISJ検査"
+200,アメリカ,2,北米,EAA検査
+300,チリ,3,南米,
